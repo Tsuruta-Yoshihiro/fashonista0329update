@@ -2,5 +2,7 @@
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
     "/css/user.css": "/css/user.css",
-    "/css/profile.css": "/css/profile.css"
+    "/css/profile.css": "/css/profile.css",
+    "/css/mypages.css": "/css/mypages.css",
+    "/css/toppages.css": "/css/toppages.css"
 }

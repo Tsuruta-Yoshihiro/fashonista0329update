@@ -15,7 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix' => 'user'], function() {
+
+Route::group(['prefix' => 'user'], function(){
     Route::get('coordination/create', 'User\CoordinationController@add');
     Route::post('coordination/create', 'User\CoordinationController@create');
     
@@ -34,6 +35,10 @@ Route::group(['prefix' => 'user'], function() {
     
     Route::get('profile/edit', 'User\ProfileController@edit');
     Route::post('profile/edit', 'User\ProfileController@update');
+    
+    
+    Route::get('profile/mypages', 'User\ProfileController@mypages');
+    Route::get('profile/toppages', 'User\ProfileController@toppages');
     
 });
 

@@ -25,5 +25,16 @@ class ProfileController extends Controller
     {
         return redirect('user.profile.edit');
     }
+    
+    
+    public function mypages()
+    {
+        return view('user.profile.mypages');
+    }
+    
+    public function toppages()
+    {
+        return view('user.profile.toppages');
+    }
 
 }
