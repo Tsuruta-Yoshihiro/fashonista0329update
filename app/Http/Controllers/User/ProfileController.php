@@ -36,5 +36,10 @@ class ProfileController extends Controller
     {
         return view('user.profile.toppages');
     }
+    
+    public function othermypages()
+    {
+        return view('user.profile.othermypages');
+    }
 
 }

@@ -20,7 +20,7 @@
         
         <!--Style-->
         <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
-        <link href="{{ secure_asset('css/profile.css') }}" rel="stylesheet">
+        <link href="{{ secure_asset('css/othermypages.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
@@ -35,17 +35,11 @@
                     </button>
                     
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        
-                        <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-auto">
                         
                         </ul>
                         
-                        <!-- Rigth Side Of Navbar -->
                         <ul class="navbar-nav ml-auto">
-                        
-                        
-                        
                             
                         </ul>
                     </div>

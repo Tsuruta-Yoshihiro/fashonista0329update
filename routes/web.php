@@ -39,7 +39,9 @@ Route::group(['prefix' => 'user'], function(){
     
     Route::get('profile/mypages', 'User\ProfileController@mypages');
     Route::get('profile/toppages', 'User\ProfileController@toppages');
+    Route::get('profile/othermypages', 'User\ProfileController@othermypages');
     
 });
+
 
 
