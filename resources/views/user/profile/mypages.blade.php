@@ -27,7 +27,7 @@
                                 </p>
                             </div>
                             <div class="btn_follow">
-                                <p class="btn mypages">
+                                <p class="btn mypages" style="color: black;">
                                     <a href="/profile/edit/" class="over">プロフィール変更</a>
                                 </p>
                             </div>
@@ -36,7 +36,7 @@
                                     <div class="main">
                                         <ul class="clearfix">
                                             
-                                            <li class="current">
+                                            <li>
                                                 <a href="/user/" rel="nofollow">
                                                     <span>コーディネート</span>
                                                 </a>

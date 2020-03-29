@@ -19,6 +19,7 @@ body {
   font-size: 30px;
   color: #333 !important;
   position: center;
+  text-align: center;
 }
 
 .nav-link {
@@ -48,4 +49,88 @@ body {
 
 .input-submit_button {
   position: center;
+}
+
+#user_header {
+  margin: 22px 0 0 0 ;
+}
+
+.btn_follow {
+  width: 20%;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #D3D3D3;
+  display: block;
+  background-color:#F5F5F5;
+  padding: 22px 0 0 0;
+  margin-bottom: 30px;
+}
+
+
+
+#user_menu nav ul li {
+  color: black;
+  width: 130px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #D3D3D3;
+  text-align: center;
+  line-height: 1.4;
+}
+
+#user_menu nav ul li a {
+  display: block;
+  padding: 8px 0;
+}
+
+.main {
+  float: left
+}
+
+.main ul {
+  display: table;
+  table-layout: fixed;
+}
+
+.main li {
+  display: table-cell;
+}
+
+.main a {
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  padding: 8px 0;
+}
+
+.sub ul {
+  display: table;
+  table-layout: fixed;
+}
+
+.sub li {
+  display: table-cell;
+}
+
+.sub a {
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  padding: 8px 0;
+}
+
+#content p {
+  font-size: 16px;
+  display: block;
+  background-color: #2490d0;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  width: 60%;
+  margin: auto;
+}
+
+.btn a {
+  color: #fff;
 }
