@@ -27,7 +27,7 @@
                                 </p>
                             </div>
                             <div class="btn_follow">
-                                <p class="btn mypages" style="color: black;">
+                                <p class="btn_profileupdate">
                                     <a href="/profile/edit/" class="over">プロフィール変更</a>
                                 </p>
                             </div>
