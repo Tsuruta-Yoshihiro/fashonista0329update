@@ -32,7 +32,7 @@
                         <div class="col-md-10">
                             <select class="form-control" id="gender" neme="gender">
                                 <option value="1">男性</option>
-                                <option value="2" selected>女性</option>
+                                <option value="2">女性</option>
                             </select>
                         </div>
                     </div>

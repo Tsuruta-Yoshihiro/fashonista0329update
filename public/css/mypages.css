@@ -11,15 +11,16 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   position: center;
   width: 100%;
-  height: 55px;
+  height: 60px;
   margin: 0 auto 0 auto;
 }
 
 .navbar-brand {
-  font-size: 30px;
+  font-size: 40px;
   color: #333 !important;
   position: center;
-  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -69,6 +70,7 @@ body {
 
 .btn_profileupdate {
   color: black;
+  text-align: center;
 }
 
 #user_menu nav ul li {
@@ -78,7 +80,7 @@ body {
   border-width: 1px;
   border-color: #D3D3D3;
   text-align: center;
-  line-height: 1.4;
+  line-height: 2.4;
 }
 
 #user_menu nav ul li a {

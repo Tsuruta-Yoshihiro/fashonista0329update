@@ -11,14 +11,16 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   position: center;
   width: 100%;
-  height: 55px;
+  height: 60px;
   margin: 0 auto 0 auto;
 }
 
 .navbar-brand {
-  font-size: 30px;
+  font-size: 40px;
   color: #333 !important;
   position: center;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .nav-link {
@@ -48,5 +50,31 @@ body {
 
 .input-submit_button {
   position: center;
+}
+
+#upload_container {
+  padding-top: 50px;
+}
+
+.section_sub h2 {
+  font-size: 18px;
+}
+
+#upload_img .sub {
+  float: left;
+}
+
+#upload_img .sub .img_box {
+  position: relative;
+  border: 1px #aaa dashed;
+  background: #fff;
+}
+
+#upload_img .sub .img_box .loading {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -25px 0 0 -25px;
 }
 
