@@ -54,27 +54,33 @@ body {
 
 #upload_container {
   padding-top: 50px;
+  background-color: #F5F5F5;
 }
 
 .section_sub h2 {
   font-size: 18px;
 }
 
-#upload_img .sub {
-  float: left;
+#upload_container .section_main {
+  width: 530px;
+  float: right;
 }
 
-#upload_img .sub .img_box {
+#upload_container .img_box {
+  width: 267px;
+  height: 368px;
   position: relative;
   border: 1px #aaa dashed;
   background: #fff;
+  margin: 20px 0 0 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #A9A9A9;
 }
 
-#upload_img .sub .img_box .loading {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -25px 0 0 -25px;
+#upload_container .main {
+  float: right;
+  position: relative;
 }
 

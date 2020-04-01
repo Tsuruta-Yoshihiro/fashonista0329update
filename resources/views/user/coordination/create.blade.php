@@ -24,12 +24,18 @@
                                                <div class="img_box">
                                                    <span class="ico"></span>
                                                    <span class="txt">NO IMAGE</span>
+                                                   
+                                                   <!--
                                                    <p class="img">
-                                                       <img src(unknown) alt width="276" height="368">
+                                                     <img src(unknown) alt width="276" height="368">
                                                    </p>
+
                                                    <p class="loading">
                                                        <span>Loading...</span>
                                                    </p>
+                                                   -->
+                                                   
+                                                   
                                                </div>
                                            </div>
                                            <div class="main">
