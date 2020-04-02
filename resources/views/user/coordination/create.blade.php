@@ -41,7 +41,11 @@
                                            <div class="main">
                                                <div id="ajax_mes"></div>
                                                <p class="select over">
+                                                   
+                                                   <!--
                                                    <input type="file" id="img_upload_file" name="img_upload_file">
+                                                   -->
+                                                   
                                                    <span class="txt">写真をアップロード</span>
                                                </p>
                                                <p class="notes">
