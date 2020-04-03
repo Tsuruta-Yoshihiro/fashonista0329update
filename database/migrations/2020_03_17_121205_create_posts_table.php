@@ -18,13 +18,13 @@ class CreatePostsTable extends Migration
             $table->string('user_id');
             $table->string('title');
             $table->string('body');
-            $table->string('image_path')->nullable();
+            $table->string('image_path');
             $table->string('item1');
-            $table->string('item2');
-            $table->string('item3');
-            $table->string('item4');
-            $table->string('item5');
-            $table->string('item6');
+            $table->string('item2')->nullable;
+            $table->string('item3')->nullable;
+            $table->string('item4')->nullable;
+            $table->string('item5')->nullable;
+            $table->string('item6')->nullable;
             $table->timestamps();
         });
     }
