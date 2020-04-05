@@ -8,7 +8,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-8 mx-auto">
+            <div class="col-md-8">
                 <h2>コーディネート投稿</h2>
                 
                    <div id="gbl_body" class="clearfix">

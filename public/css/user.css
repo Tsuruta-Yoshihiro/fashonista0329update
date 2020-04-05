@@ -53,6 +53,7 @@ body {
 }
 
 #gbl_body {
+  position: center;
   clear: both;
   width: 990px;
   margin: auto 0 auto 0;
