@@ -63,7 +63,12 @@ body {
 }
 
 #upload_container section:first-child {
-  padding-top: 50px;
+  padding-top: 20px;
+}
+
+#upload_container section .section_main {
+  width: 530px;
+  float: right;
 }
 
 #upload_container section {
@@ -81,13 +86,19 @@ body {
 }
 
 
+#upload_container section .section_sub h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
 #upload_container .sub .img_box {
   width: 267px;
   height: 368px;
   position: relative;
   border: 1px #aaa dashed;
   background: #fff;
-  margin: 20px 0 0 0;
+  margin: 0 0 0 0;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
@@ -105,7 +116,7 @@ body {
   background-color: #2490d0;
   overflow: hidden;
   border: 2px #ddd solid;
-  border-radius: 3px;
+  border-radius: 5px;
   color: #fff;
   font-size: 12px;
   text-align: center;
@@ -127,22 +138,77 @@ body {
   width: 224px;
   float: right;
   position: relative;
-  
 }
 
-
-
-
-.section_sub h2 {
-  font-size: 18px;
+#upload_img .main .notes {
+  margin: 8px 0 0  2px;
+  font-size: 12px;
+  color: #777;
 }
 
+#upload_item #add_item {
+  width: 341px;
+}
 
+#upload_item #add_item #add_btn {
+  position: relative;
+}
 
-#upload_container .section_main {
+#upload_item #add_item #add_btn .trigger {
+  padding: 5px 0 5px 0;
+  width: 147px;
+  height: 35px;
+  background-color: #2490d0;
+  border: 2px #ddd solid;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#upload_item #add_item #add_btn .trigger span .ico {
+  margin : 0 10px 0 0;
+  font-size: 13px;
+}
+
+#add_item p.notes {
+  margin: 8px 0 0 2px;
+  font-size: 12px;
+  color: #777;
+}
+
+#coordination_detail .list:first-child {
+  margin-top: 0;
+}
+
+#coordination_detail .list h3 {
+  font-size: 14px;
+}
+
+#coordination_detail .list .detail {
+  margin: 5px 0 0 0;
+}
+
+#upload_container section .section_main textarea {
+  width: 100%;
+  max-width: 528px;
+  min-width: 528px;
+  border: 1px #aaa;
+  border-radius: 5px;
+  height: 150px;
+  font-size: 13px;
+  padding: 8px 8px;
+}
+
+#upload_container section .section_sub {
+  width: 167px;
+  float: left;
+  text-align: right;
+}
+
+#upload_container section .section_main {
   width: 530px;
   float: right;
 }
-
-
-

@@ -74,11 +74,13 @@
                                                            <span class="txt">アイテムを追加</span>
                                                        </p>
                                                    </div>
-                                               </div>
+                                               
                                                <p class="notes">
-                                                   最大6アイテムまで追加できます (残り
+                                                   最大６アイテムまで追加できます (残り
                                                    <span class="num">6</span>
+                                                   )
                                                </p>
+                                               </div>
                                            </div>
                                        </section>
                                        
@@ -86,13 +88,15 @@
                                            <div class="section_sub">
                                                <h2>コーディネート詳細</h2>
                                            </div>
-                                           <div class="list_summary">
-                                               <h3>コーディネート紹介文</h3>
-                                               <div class="detail">
-                                                   <textarea name="coordination_summary" id="coordination_summary">
-                                                   </textarea>
-                                               </div>
-                                           </div>
+                                           <div class="section_main clearfix">
+                                                <div class="list summary">
+                                                    <h3>コーディネート紹介文</h3>
+                                                     <div class="detail">
+                                                        <textarea name="coordination_summary" id="coordination_summary">
+                                                        </textarea>
+                                                      </div>
+                                                 </div>
+                                            </div>           
                                        </section>
                                    </div>
                                </div>
