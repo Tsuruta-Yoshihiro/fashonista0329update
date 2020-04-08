@@ -17,4 +17,7 @@ mix.js('resources/js/app.js', 'public/js')
     
     .sass('resources/sass/profile.scss', 'public/css')
     .sass('resources/sass/mypages.scss', 'public/css')
-    .sass('resources/sass/toppages.scss', 'public/css');
+    .sass('resources/sass/toppages.scss', 'public/css')
+    .sass('resources/sass/upload.scss' , 'public/css')
+    .sass('resources/sass/othermypages.scss' , 'public/css');
+    

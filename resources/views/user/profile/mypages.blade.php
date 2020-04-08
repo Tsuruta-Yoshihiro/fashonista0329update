@@ -12,7 +12,7 @@
                 <h2>マイページ</h2>
                 <form action="{{ action('User\ProfileController@mypages') }}" method="get" enctype="multipart/form-data">
                     @if (count($errors) > 0)
-                       ul>
+                        <ul>
                             @foreach($errors->all() as $e)
                                 <li>{{ $e }}</li>
                             @endforeach

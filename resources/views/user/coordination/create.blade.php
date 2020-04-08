@@ -104,7 +104,7 @@
                                <div id="processing">
                                    <ul class="clearfix">
                                        <il class="upload">
-                                         <a href="#" class="over">UPLOAD</a>
+                                         <a href="#" class="over">投稿する</a>
                                        </il>
                                    </ul>
                                </div>

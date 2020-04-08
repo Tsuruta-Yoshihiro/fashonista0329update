@@ -21,10 +21,7 @@ body {
   position: center;
   margin-right: auto;
   margin-left: auto;
-  
 }
-
-
 
 .nav-link {
   color: #333 !important;
@@ -56,9 +53,8 @@ body {
 }
 
 #user_header {
-  margin: 22px 0 0 0 ;
+  margin: 22px 0 0 0;
 }
-
 
 .btn_follow {
   width: 20%;
@@ -67,17 +63,15 @@ body {
   border-width: 1px;
   border-color: #D3D3D3;
   display: block;
-  background-color:#F5F5F5;
+  background-color: #F5F5F5;
   padding: 22px 0 0 0;
   margin-bottom: 30px;
 }
 
 .btn_profileupdate {
-  
   color: black;
   text-align: center;
 }
-
 
 #user_menu nav ul li {
   color: black;
@@ -95,7 +89,7 @@ body {
 }
 
 .main {
-  float: left
+  float: left;
 }
 
 .main ul {
@@ -144,3 +138,4 @@ body {
 .btn a {
   color: #fff;
 }
+

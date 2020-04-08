@@ -16,6 +16,13 @@ class CoordinationController extends Controller
         return redirect('user.coordination.create');
     }
     
+    
+    public function upload()
+    {
+        return view('user.coordination.upload');
+    }
+    
+    
     public function edit()
     {
         return view('user.coordination.edit');

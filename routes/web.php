@@ -20,6 +20,9 @@ Route::group(['prefix' => 'user'], function(){
     Route::get('coordination/create', 'User\CoordinationController@add');
     Route::post('coordination/create', 'User\CoordinationController@create');
     
+    Route::get('coordination/upload' , 'User\CoordinationController@upload');
+    
+    
     Route::get('coordination', 'User\CoordinationController@index');
     
     Route::get('coordination/edit', 'User\CoordinationController@edit');
