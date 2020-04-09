@@ -19,22 +19,71 @@
                                       <img src="###" alt="###" width="148" height="148">
                                   </p>
                               </div>
+                              
                               <!-- フォロー機能ボタン -->
                               <div class="btn_follow">
-                                  <p class="btn"></p>
+                                  <button v-if="currentFollowing" type="button" class="btn btn-point btn-raised" @click="unfollow">
+                                      <div v-if="sending" class="spinner-border spinner-border-sm" role="status">
+                                          <span class="sr-only">Sending...</span>
+                                      </div>
+                                      <div v-else>フォロー中</div>
+                                  </button>
+                                  <button v-else type="button" class="btn btn-default btn raised" @click="follow">
+                                      <div v-if="sending" class="spinner-border spinner-border-sm" role="status">
+                                          <span class="sr-only">Sending...</span>
+                                      </div>
+                                      <div v-else>
+                                          フォローする
+                                          <i class="material-icons">add</i>
+                                      </div>
+                                  </button>
                               </div>
                               
-                              <div id="user_main">
-                                  <section class="intro">
-                                      <h1 class="name">
-                                      </h1>
-                                  </section>
-                              </div>
-                              
-                          </div>
+                        　</div>
                       </div>
                   </header>
-                  
+                              
+                            　<div id="user_menu">
+                                　<nav class="clearfix">
+                                    　<div class="main">
+                                        　<ul class="clearfix">
+                                                
+                                            　<li>
+                                                　<a href="/user/" rel="nofollow">
+                                                    　<span>コーディネート</span>
+                                                　</a>
+                                            　</li>
+                                                
+                                            　<li>
+                                                　<a href="/user/favorite/" rel="nofollow">
+                                                    　<span>お気に入り</span>
+                                                　</a> 
+                                            　</li>
+                                        　</ul>
+                                    　</div>
+                                        
+                                    　<div class="sub">
+                                        　<ul class="clearfix">
+                                            　<li>
+                                                　<a href="/user/follower" rel="nofollow">
+                                                    　<span>フォロワー</span>
+                                                　</a>
+                                            　</li>
+                                                
+                                               <li>
+                                                　<a href="/user/follow/">
+                                                    　<span>フォロー</span>
+                                                　</a>
+                                            　　</li>
+                                        　</ul>
+                                    　</div>
+                                　</nav>
+                            　</div>
+                            　
+                            　<!-- 投稿リスト -->
+                            　<div id="content">
+                            　    
+                            　</div>
             </div>    
         </div>
     </div>
