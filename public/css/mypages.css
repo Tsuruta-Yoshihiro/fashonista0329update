@@ -53,19 +53,51 @@ body {
 }
 
 #user_header {
+  clear: both;
   margin: 22px 0 0 0;
 }
 
-.btn_follow {
-  width: 20%;
-  border-style: solid;
+#user_header #user_sub {
+  width: 150px;
+  float: left;
+  margin: 0 0 0 42px;
+}
+
+#user_header #user_sub .image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+#user_header #user_sub .btn_follow {
+  width: 134px;
+  margin: 18px auto 0 auto;
+}
+
+#gbl_body {
+  clear: both;
+  width: 990px;
+  margin: 0 auto 0 auto;
+  padding: 10px 0 0 0;
+}
+
+#user_menu {
+  clear: both;
+  padding: 10px 0 0 0;
+}
+
+#user_menu nav {
+  background: #fff;
+  border: 2px #ddd solid;
   border-radius: 3px;
-  border-width: 1px;
-  border-color: #D3D3D3;
-  display: block;
-  background-color: #F5F5F5;
-  padding: 22px 0 0 0;
-  margin-bottom: 30px;
+}
+
+#user_menu nav .main {
+  float: left;
+}
+
+#user_menu nav .main li {
+  border-right: 1px #ddd solid;
 }
 
 .btn_profileupdate {

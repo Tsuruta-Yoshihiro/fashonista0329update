@@ -80,11 +80,17 @@
                                 　</nav>
                             　</div>
                             　
-                            　<!-- 投稿リスト -->
+                            　
+                            　
                             　<div id="content">
-                            　    
+                                 <div id="main_list">
+                                    <ul class="list img_after_load clearfix">
+                                        
+                                    </ul>
+                                 </div>
                             　</div>
-            </div>    
+                            　  
+        　　</div>    
         </div>
     </div>
 @endsection    
