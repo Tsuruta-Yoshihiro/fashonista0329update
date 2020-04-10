@@ -104,6 +104,45 @@ body {
   border-right: 1px #ddd solid;
 }
 
+#user_menu nav .sub {
+  float: right;
+}
+
+#user_menu nav .sub li {
+  border-left: 1px #ddd solid;
+}
+
+#user_menu nav ul li {
+  width: 120px;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+#user_menu nav .sub li:last-child a {
+  border-radius: 0 3px 3px 0;
+}
+
+#user_menu nav ul li a {
+  display: block;
+  color: #333;
+  padding: 8px 0 8px 0;
+}
+
+#content {
+  clear: both;
+  margin: 18px 0 0 0;
+}
+
+#content .btnAdd {
+  width: 330px;
+  margin: 0 auto 0 auto;
+  text-align: center;
+}
+
+
 
 
 
