@@ -23,7 +23,7 @@
                                            <div class="sub">
                                                <div class="img_box">
                                                    <span class="ico"></span>
-                                                   <span class="txt">NO IMAGE</span>
+                                                   <span class="txt" hidden>NO IMAGE</span>
                                                    
                                                    <!--
                                                    <p class="img">
@@ -40,14 +40,19 @@
                                            </div>
                                            <div class="main">
                                                <div id="ajax_mes"></div>
-                                               <p class="select over">
+                                               <div>
+                                                 
+                                                   
+                                                   <input type="file" id="file" name="img_upload_file">
+                                                    <div id="result"></div>
                                                    
                                                    <!--
-                                                   <input type="file" id="img_upload_file" name="img_upload_file">
+                                                   <span class="txt">写真をアップロード</span>
                                                    -->
                                                    
-                                                   <span class="txt">写真をアップロード</span>
-                                               </p>
+                                                   
+                                               </div>
+                                               
                                                <p class="notes">
                                                    推奨サイズ：横500px × 縦：667px
                                                    <br>
@@ -115,4 +120,23 @@
             </div>
         </div>
     </div>
+    
+    
+         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+            <script>
+            $(function(){
+                $('#file').change(function(){
+                    $('img').remove();
+                    var file = $(this).prop('files')[0];
+                    if(!file.type.match('image.*')){
+                        return;
+                    }
+                    var fileReader = new FileReader();
+                    fileReader.onloadend = function() {
+                        $('#result').html('<img src="' + fileReader.result + '"/>');
+                    }
+                    fileReader.readAsDataURL(file);
+                });
+            });
+            </script>
 @endsection

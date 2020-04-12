@@ -70,11 +70,11 @@
                                         </nav>
                                     </div>
                                 </div>
-                            <div id="content">
-                                <p class="btnAdd">
-                                    <a href="/user/upload/item/" class="over">コーディネートを投稿する</a>
-                                </p>
-                            </div>
+                                <div id="content">
+                                    <p class="btnAdd">
+                                        <a href="/user/upload/item/" class="over">コーディネートを投稿する</a>
+                                    </p>
+                                </div>
                         </div>
                     </div>
                 </form>

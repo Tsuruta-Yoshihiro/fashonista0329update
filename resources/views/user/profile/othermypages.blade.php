@@ -9,7 +9,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-                <h2>他マイページ</h2>
+                <h2></h2>
                 
                   <header id="gbl_title" class="othermypages">
                       <div id="user_header" class="clearfix">
@@ -43,43 +43,45 @@
                       </div>
                   </header>
                               
-                            　<div id="user_menu">
-                                　<nav class="clearfix">
-                                    　<div class="main">
-                                        　<ul class="clearfix">
-                                                
-                                            　<li>
-                                                　<a href="/user/" rel="nofollow">
-                                                    　<span>コーディネート</span>
-                                                　</a>
-                                            　</li>
-                                                
-                                            　<li>
-                                                　<a href="/user/favorite/" rel="nofollow">
-                                                    　<span>お気に入り</span>
-                                                　</a> 
-                                            　</li>
-                                        　</ul>
-                                    　</div>
-                                        
-                                    　<div class="sub">
-                                        　<ul class="clearfix">
-                                            　<li>
-                                                　<a href="/user/follower" rel="nofollow">
-                                                    　<span>フォロワー</span>
-                                                　</a>
-                                            　</li>
-                                                
-                                               <li>
-                                                　<a href="/user/follow/">
-                                                    　<span>フォロー</span>
-                                                　</a>
-                                            　　</li>
-                                        　</ul>
-                                    　</div>
-                                　</nav>
-                            　</div>
-                            　
+                              
+                              <div id ="gbl_body" class="clearfix">  
+                                　<div id="user_menu">
+                                    　<nav class="clearfix">
+                                        　<div class="main">
+                                            　<ul class="clearfix">
+                                                    
+                                                　<li>
+                                                    　<a href="/user/" rel="nofollow">
+                                                        　<span>コーディネート</span>
+                                                    　</a>
+                                                　</li>
+                                                    
+                                                　<li>
+                                                    　<a href="/user/favorite/" rel="nofollow">
+                                                        　<span>お気に入り</span>
+                                                    　</a> 
+                                                　</li>
+                                            　</ul>
+                                        　</div>
+                                            
+                                        　<div class="sub">
+                                            　<ul class="clearfix">
+                                                　<li>
+                                                    　<a href="/user/follower" rel="nofollow">
+                                                        　<span>フォロワー</span>
+                                                    　</a>
+                                                　</li>
+                                                    
+                                                   <li>
+                                                    　<a href="/user/follow/">
+                                                        　<span>フォロー</span>
+                                                    　</a>
+                                                　　</li>
+                                            　</ul>
+                                        　</div>
+                                    　</nav>
+                                　</div>
+                              </div>
                             　
                             　
                             　<div id="content">
