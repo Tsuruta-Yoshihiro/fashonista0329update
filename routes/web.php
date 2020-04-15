@@ -23,6 +23,7 @@ Route::group(['prefix' => 'user'], function(){
     Route::get('coordination/upload' , 'User\CoordinationController@upload');
     
     
+    
     Route::get('coordination', 'User\CoordinationController@index');
     
     Route::get('coordination/edit', 'User\CoordinationController@edit');

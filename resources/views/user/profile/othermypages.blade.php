@@ -34,7 +34,6 @@
                                       </div>
                                       <div v-else>
                                           フォローする
-                                          <i class="material-icons">add</i>
                                       </div>
                                   </button>
                               </div>
@@ -44,7 +43,7 @@
                   </header>
                               
                               
-                              <div id ="gbl_body" class="clearfix">  
+                              <div id="gbl_body" class="clearfix">  
                                 　<div id="user_menu">
                                     　<nav class="clearfix">
                                         　<div class="main">

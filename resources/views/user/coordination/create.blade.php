@@ -109,7 +109,7 @@
                                <div id="processing">
                                    <ul class="clearfix">
                                        <il class="upload">
-                                         <a href="#" class="over">投稿する</a>
+                                         <a href=" { '/user/coordination/upload' } " class="over">投稿する</a>
                                        </il>
                                    </ul>
                                </div>

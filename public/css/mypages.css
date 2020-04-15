@@ -128,15 +128,11 @@ body {
 }
 
 #user_menu nav ul li {
-  color: black;
   width: 220px;
-  float: left;
   text-align: center;
   border-style: solid;
   border-width: 1px;
   border-color: #D3D3D3;
-  font-size: 18px;
-  font-weight: bold;
   line-height: 2.4;
 }
 
