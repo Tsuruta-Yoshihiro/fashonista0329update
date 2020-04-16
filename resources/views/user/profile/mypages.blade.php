@@ -71,9 +71,9 @@
                                     </div>
                                 </div>
                                 <div id="content">
-                                    <p class="btnAdd">
+                                    <div class="btnAdd">
                                         <a href="/user/upload/item/" class="over">コーディネートを投稿する</a>
-                                    </p>
+                                    </div>
                                 </div>
                         </div>
                     </div>

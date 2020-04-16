@@ -24,35 +24,25 @@
                                                <div class="img_box">
                                                    <span class="ico"></span>
                                                    <span class="txt" hidden>NO IMAGE</span>
-                                                   
                                                    <!--
                                                    <p class="img">
                                                      <img src(unknown) alt width="276" height="368">
                                                    </p>
-
                                                    <p class="loading">
                                                        <span>Loading...</span>
                                                    </p>
                                                    -->
-                                                   
-                                                   
                                                </div>
                                            </div>
                                            <div class="main">
                                                <div id="ajax_mes"></div>
                                                <div>
-                                                 
-                                                   
                                                    <input type="file" id="file" name="img_upload_file">
                                                     <div id="result"></div>
-                                                   
                                                    <!--
                                                    <span class="txt">写真をアップロード</span>
                                                    -->
-                                                   
-                                                   
                                                </div>
-                                               
                                                <p class="notes">
                                                    推奨サイズ：横500px × 縦：667px
                                                    <br>
@@ -109,7 +99,7 @@
                                <div id="processing">
                                    <ul class="clearfix">
                                        <il class="upload">
-                                         <a href=" { '/user/coordination/upload' } " class="over">投稿する</a>
+                                         <a href=" {{ url('/user/coordination/upload') }}" class="over">投稿する</a>
                                        </il>
                                    </ul>
                                </div>

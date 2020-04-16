@@ -1,7 +1,6 @@
 body {
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #fff;
   color: #333;
 }
 
@@ -127,6 +126,13 @@ body {
   display: table-cell;
 }
 
+.sub a {
+  text-align: center;
+  display: block;
+  background-color: #fff;
+  padding: 8px 0;
+}
+
 #user_menu nav ul li {
   width: 220px;
   text-align: center;
@@ -153,18 +159,20 @@ body {
 }
 
 #content {
-  text-align: center;
-  margin: 18px auto 0 auto;
+  clear: both;
+  width: 990px;
+  margin: 18px 0 0 0;
 }
 
 #content .btnAdd {
-  text-align: center;
   width: 330px;
   margin: 0 auto 0 auto;
+  text-align: center;
 }
 
 #content .btnAdd a {
   display: block;
+  padding: 8px 0 8px 0;
   text-align: center;
   text-decoration: none;
   color: #fff;
