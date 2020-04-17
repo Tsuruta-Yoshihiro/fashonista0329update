@@ -28,7 +28,7 @@
                             </div>
                             <div class="btn_follow">
                                 <p class="btn_profileupdate">
-                                    <a href="/profile/edit/" class="over">プロフィール変更</a>
+                                    <a href=" {{ url('/user/profile/edit') }}" class="over">プロフィール変更</a>
                                 </p>
                             </div>
                             
@@ -72,7 +72,7 @@
                                 </div>
                                 <div id="content">
                                     <div class="btnAdd">
-                                        <a href="/user/upload/item/" class="over">コーディネートを投稿する</a>
+                                        <a href=" {{ url('/user/coordination/create') }}" class="over">コーディネートを投稿する</a>
                                     </div>
                                 </div>
                         </div>

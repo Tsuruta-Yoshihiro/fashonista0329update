@@ -1,6 +1,7 @@
 body {
   background-repeat: no-repeat;
   background-position: center;
+  //background-color: #fff;
   color: #333;
 }
 
@@ -20,6 +21,7 @@ body {
   position: center;
   margin-right: auto;
   margin-left: auto;
+  
 }
 
 .nav-link {
@@ -47,7 +49,9 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-#submit_button {
+.btn-primary {
+  width: 230px;
+  text-align: center;
   position: center;
 }
 

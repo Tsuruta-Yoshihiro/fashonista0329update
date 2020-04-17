@@ -83,6 +83,26 @@ body {
   margin: 18px auto 0 auto;
 }
 
+#user_header #user_sub .image p.img img {
+  border-radius: 50%;
+  border: 1px #ddd solid;
+}
+
+.btn_follow p.btn_profileupdate {
+  position: relative;
+}
+
+.btn_profileupdate a {
+  display: block;
+  padding: 8px 0 8px 0;
+  text-decoration: none;
+  color: #808080;
+  background-color:#EEEEEE;
+  border: 1px #ddd solid;
+  border-radius: 3px;
+  text-align: center;
+}
+
 #gbl_body {
   clear: both;
   width: 990px;
@@ -201,16 +221,4 @@ body {
   line-height: 1.2;
   padding: 13px 0 13px 0;
   background-color: #2490d0;
-}
-
-.btn_profileupdate {
-  display: block;
-  padding: 8px 0 8px 0;
-  text-decoration: none;
-  color: #808080;
-  background-color:#EEEEEE;
-  font-weight: bold;
-  border: 2px #ddd solid;
-  border-radius: 2px;
-  text-align: center;
 }
