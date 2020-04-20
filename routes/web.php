@@ -35,6 +35,8 @@ Route::group(['prefix' => 'user'], function(){
     
     Route::get('profile/create', 'User\ProfileController@add');
     Route::post('profile/create', 'User\ProfileController@create');
+    Route::get('profile/create' ,'Livewire\Birthday@render');
+    
     
     Route::get('profile/edit', 'User\ProfileController@edit');
     Route::post('profile/edit', 'User\ProfileController@update');
