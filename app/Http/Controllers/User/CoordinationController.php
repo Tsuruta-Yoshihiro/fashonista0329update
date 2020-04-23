@@ -11,7 +11,8 @@ class CoordinationController extends Controller
         return view('user.coordination.create');
     }
     
-    public function create()
+    
+    public function create(Request $request)
     {
         return redirect('user.coordination.create');
     }

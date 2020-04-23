@@ -1,10 +1,10 @@
-{{-- layouts/user.blade.phpを読み込む --}}
-@extends('layouts.user')
+{{-- layouts/post.blade.phpを読み込む --}}
+@extends('layouts.post')
 
-{{-- user.blade.phpの@yield('title')に'コーディネート投稿'を埋め込む --}}
+{{-- post.blade.phpの@yield('title')に'コーディネート投稿'を埋め込む --}}
 @section('title', 'コーディネイト投稿')
 
-{{-- user.blade.phpの@yield('content')に以下タグを埋め込む --}}
+{{-- post.blade.phpの@yield('content')に以下タグを埋め込む --}}
 @section('content')
     <div class="container">
         <div class="row">
@@ -13,7 +13,11 @@
                 
                    <div id="gbl_body" class="clearfix">
                        <div id="content">
-                           <form action="/user/upload/coordination" name="regist_coordination" method="post">
+                           <form action="{{ action('User\CoordinationController@create') }}" method="post" enctype="multipart/form-data">
+                               
+                               
+                               
+                               
                                <div id="upload_container">
                                    <section id="upload_img" class="clearfix">
                                        <div class="section_sub required">

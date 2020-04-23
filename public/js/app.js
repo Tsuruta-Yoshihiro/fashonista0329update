@@ -49676,6 +49676,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/post.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/post.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/profile.scss":
 /*!*************************************!*\
   !*** ./resources/sass/profile.scss ***!
@@ -49720,27 +49731,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/sass/user.scss":
-/*!**********************************!*\
-  !*** ./resources/sass/user.scss ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-
 /***/ 0:
 /*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/user.scss ./resources/sass/profile.scss ./resources/sass/mypages.scss ./resources/sass/toppages.scss ./resources/sass/upload.scss ./resources/sass/othermypages.scss ./resources/sass/profile_edit.scss ***!
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/post.scss ./resources/sass/profile.scss ./resources/sass/mypages.scss ./resources/sass/toppages.scss ./resources/sass/upload.scss ./resources/sass/othermypages.scss ./resources/sass/profile_edit.scss ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /home/ec2-user/environment/fashonista/resources/js/app.js */"./resources/js/app.js");
 __webpack_require__(/*! /home/ec2-user/environment/fashonista/resources/sass/app.scss */"./resources/sass/app.scss");
-__webpack_require__(/*! /home/ec2-user/environment/fashonista/resources/sass/user.scss */"./resources/sass/user.scss");
+__webpack_require__(/*! /home/ec2-user/environment/fashonista/resources/sass/post.scss */"./resources/sass/post.scss");
 __webpack_require__(/*! /home/ec2-user/environment/fashonista/resources/sass/profile.scss */"./resources/sass/profile.scss");
 __webpack_require__(/*! /home/ec2-user/environment/fashonista/resources/sass/mypages.scss */"./resources/sass/mypages.scss");
 __webpack_require__(/*! /home/ec2-user/environment/fashonista/resources/sass/toppages.scss */"./resources/sass/toppages.scss");

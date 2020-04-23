@@ -6,6 +6,9 @@
 
 {{-- profile.blade.phpの@yield('content')に以下タグを埋め込む --}}
 @section('content')
+
+@livewireStyles
+
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
@@ -56,16 +59,11 @@
                         <label class="col-md-2 col-form-label text-md-left" for="birthday">生年月日</label>
                         <div class="col-md-10">
                             
-                            <!-- 年 -->
-                            
-                            
-                            <!-- 月 -->
-                            
-                            
-                            <!-- 日 -->
-                            
+                            @livewire('birthday')
                             
                         </div>
+                        @livewireScripts
+                        
                     </div>
                     
                     <div class="form-group row">

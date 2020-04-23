@@ -4,7 +4,7 @@
                             <!-- 年 -->
                             <select name="birth_year" wire:model="year" wire:change="onChange">
                                 <option></option>
-                                @for($i = 1900 ; $i <= date('Y') ; $i++)
+                                @for($i = 1950 ; $i <= date('Y') ; $i++)
                                 <option value="{{ $i }}">{{ $i }}年</option>
                                 @endfor
                             </select>
@@ -27,7 +27,7 @@
                             
                             <!-- 年齢 -->
                             @if($age > -1)
-                               $nbsp;/$nbsp;{{ $age }} 才
+                               {{ $age }} 才
                             @endif
                             
 </div>

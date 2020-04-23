@@ -1,0 +1,247 @@
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #333;
+}
+
+.navbar-Fashonista {
+  background-color: #fff;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  position: center;
+  width: 100%;
+  height: 60px;
+  margin: 0 auto 0 auto;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  color: #333 !important;
+  position: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #333 !important;
+}
+
+.table-dark {
+  color: #fff;
+}
+
+.list-group-item {
+  border-color: #333;
+  background-color: #fff;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.login-header {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.login-body {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.input-submit_button {
+  position: center;
+}
+
+#gbl_body {
+  position: center;
+  clear: both;
+  width: 990px;
+  margin: auto 0 auto 0;
+  padding: 10px 0 0 0;
+}
+
+#content {
+  position: relative;
+  margin: 20px auto 0 auto;
+  width: 842px;
+}
+
+#upload_container section:first-child {
+  padding-top: 20px;
+}
+
+#upload_container section .section_main {
+  width: 530px;
+  float: right;
+}
+
+#upload_container section {
+  padding: 20px 35px;
+}
+
+#upload_img .sub .img_box span.ico {
+  margin-top: 158px;
+}
+
+#upload_container {
+  margin: 14px 0 0 0;
+  border: 1px #A9A9A9 solid;
+  border-radius: 5px;
+  padding: 0 0 30px 0;
+  width: 840px;
+  padding-top: 30px;
+  background-color: #F5F5F5;
+}
+
+#upload_container section .section_sub h2 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#upload_container .sub .img_box {
+  width: 267px;
+  height: 368px;
+  position: relative;
+  border: 1px #aaa dashed;
+  background: #fff;
+  margin: 0 0 0 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #A9A9A9;
+}
+
+#upload_img .sub {
+  float: left;
+}
+
+#upload_img .main .select {
+  position: relative;
+  height: 35px;
+  width: 145px;
+  background-color: #2490d0;
+  overflow: hidden;
+  border: 2px #ddd solid;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#upload_img .main .select span {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 145px;
+  height: 32px;
+  font-weight: bold;
+}
+
+#upload_img .main {
+  padding: 154px 0 0 0;
+  width: 224px;
+  float: right;
+  position: relative;
+}
+
+#upload_img .main .notes {
+  margin: 8px 0 0 2px;
+  font-size: 12px;
+  color: #777;
+}
+
+#upload_item #add_item {
+  width: 341px;
+}
+
+#upload_item #add_item #add_btn {
+  position: relative;
+}
+
+#upload_item #add_item #add_btn .trigger {
+  padding: 5px 0 5px 0;
+  width: 147px;
+  height: 35px;
+  background-color: #2490d0;
+  border: 2px #ddd solid;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#upload_item #add_item #add_btn .trigger span .ico {
+  margin: 0 10px 0 0;
+  font-size: 13px;
+}
+
+#add_item p.notes {
+  margin: 8px 0 0 2px;
+  font-size: 12px;
+  color: #777;
+}
+
+#coordination_detail .list:first-child {
+  margin-top: 0;
+}
+
+#coordination_detail .list h3 {
+  font-size: 14px;
+}
+
+#coordination_detail .list .detail {
+  margin: 5px 0 0 0;
+}
+
+#upload_container section .section_main textarea {
+  width: 100%;
+  max-width: 528px;
+  min-width: 528px;
+  border: 1px #A9A9A9 solid;
+  border-radius: 5px;
+  height: 150px;
+  font-size: 13px;
+  padding: 8px 8px;
+}
+
+#upload_container section .section_sub {
+  width: 167px;
+  float: left;
+  text-align: right;
+}
+
+#upload_container section .section_main {
+  width: 530px;
+  float: right;
+}
+
+#processing {
+  display: block;
+  clear: both;
+  margin: 37px auto 0 auto;
+  width: 240px;
+}
+
+.upload {
+  margin: 0 11px 0 11px;
+  float: left;
+  width: 220px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+}
+
+.upload a {
+  display: block;
+  text-align: center;
+  background-color: #2490d0;
+  padding: 12px 0 12px 0;
+  color: #fff;
+  font-weight: bold;
+  border: 1px #1e78ad solid;
+  border-radius: 4px;
+}
+
