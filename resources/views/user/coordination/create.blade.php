@@ -15,11 +15,16 @@
                        <div id="content">
                            <form action="{{ action('User\CoordinationController@create') }}" method="post" enctype="multipart/form-data">
                                
-                               
-                               
+                               @if (count($errors) > 0)
+                                   <ul>
+                                      @foreach($errors->all() as $e)
+                                          <li>{{ $e }}</li>
+                                      @endforeach
+                                   </ul>
+                               @endif
                                
                                <div id="upload_container">
-                                   <section id="upload_img" class="clearfix">
+                                   <section id="upload_img" class="clearfix" for="image">
                                        <div class="section_sub required">
                                            <h2>コーディネート画像</h2>
                                        </div>
