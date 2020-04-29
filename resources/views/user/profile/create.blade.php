@@ -15,6 +15,7 @@
             <div class="col-md-8 mx-auto">
                 <h2>新規登録ページ</h2>
                 <form action="{{ action('User\ProfileController@create') }}" method="post" enctype="multipart/form-data">
+                    
                     @if (count($errors) > 0)
                         <ul>
                             @foreach($errors->all() as $e)
@@ -24,16 +25,39 @@
                     @endif
                     
                     <div class="form-group row">
-                        <label class="col-md-2 col-form-label text-md-left" for="user_name">ニックネーム</label>
-                        <div class="col-md-10">
-                            <input type="text" class="form-control" name="user_name" value="{{ old('user_name' )}}">
+                        <label class="col-md-4 col-form-label text-md-right" for="name">ニックネーム</label>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="name" value="{{ old('name') }}">
                         </div>
                     </div>
                     
+                    <div class="form-group row">
+                        <label class="col-md-4 col-form-label text-md-right" for="email">{{ __('messages.E-Mail Address') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                        </div>
+                    </div>
                     
                     <div class="form-group row">
-                        <label class="col-md-2 col-form-label text-md-left" for="gender">性別</label>
-                        <div class="col-md-10">
+                        <label class="col-md-4 col-form-label text-md-right" for="password">{{ __('messages.Password') }}</label>
+
+                        <div class="col-md-6">
+                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-4 col-form-label text-md-right" for="password_confirmation">{{ __('messages.Confirm Password') }}</label>
+                        <div class="col-md-6">
+                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-md-4 col-form-label text-md-right" for="gender">性別</label>
+                        <div class="col-md-6">
                             <select class="form-control" id="gender" neme="gender">
                                 <option value="1">男性</option>
                                 <option value="2">女性</option>
@@ -43,8 +67,8 @@
                     
                     
                     <div class="form-group row">
-                        <label class="col-md-2 col-form-label text-md-left" for="height">身長</label>
-                        <div class="col-md-10">
+                        <label class="col-md-4 col-form-label text-md-right" for="height">身長</label>
+                        <div class="col-md-6">
                             <select class="form-control" id="height" name="height">
                                 <?php
                                 for ($i = 140; $i <=210; $i++) {
@@ -57,8 +81,8 @@
                 
                     
                     <div class="form-group-row">
-                        <label class="col-md-2 col-form-label text-md-left" for="birthday">生年月日</label>
-                        <div class="col-md-10">
+                        <label class="col-md-4 col-form-label text-md-right" for="birthday">生年月日</label>
+                        <div class="col-md-6" style="float: right;">
                             
                             @livewire('birthday')
                             
@@ -68,8 +92,8 @@
                     </div>
                     
                     <div class="form-group row">
-                        <label class="col-md-2 col-form-label text-md-left" for="age">年齢</label>
-                        <div class="col-md-10">
+                        <label class="col-md-4 col-form-label text-md-right" for="age">年齢</label>
+                        <div class="col-md-6">
                             <select class="form-control" id="age" neme="age">
                                 <option value="1">表示する</option>
                                 <option value="2" selected>表示しない</option>

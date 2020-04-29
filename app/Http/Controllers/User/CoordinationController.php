@@ -33,8 +33,20 @@ class CoordinationController extends Controller
         $coordinations->fill($form);
         $coordinations->save();
         
-        return redirect('user.coordination.create');
+        return redirect('user.coordination.upload');
     }
+    
+    public function index(Request $request)
+    {
+        $cond_image = $request->cond_image;
+        if ($cond_image != '') {
+            $posts = Coordinations::where('image', $cond_image)->get();
+        } else {
+            $posts = Coordinations::all();
+        }
+        return view('user.coordination.upload', 'user.coordination.mypages', ['posts' => $posts, 'cond_image' => $cond_image]);
+    }
+    
     
     
     public function upload()

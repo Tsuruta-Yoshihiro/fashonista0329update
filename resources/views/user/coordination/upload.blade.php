@@ -12,7 +12,7 @@
                 
                  <div class="title_upload">投稿が完了しました</div>
                    
-                   <form action="{{ action('User\ProfileController@mypages') }}" method="get" enctype="multipart/form-data">
+                   <form action="{{ action('User\CoordinationController@upload') }}" method="get" enctype="multipart/form-data">
                     @if (count($errors) > 0)
                         <ul>
                             @foreach($errors->all() as $e)

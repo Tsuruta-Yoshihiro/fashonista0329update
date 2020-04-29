@@ -13,7 +13,7 @@
                 
                    <div id="gbl_body" class="clearfix">
                        <div id="content">
-                           <form action="{{ action('User\CoordinationController@create') }}" method="post" enctype="multipart/form-data">
+                           <form action="{{ action('User\CoordinationController@upload') }}" method="post" enctype="multipart/form-data">
                                
                                @if (count($errors) > 0)
                                    <ul>
@@ -33,14 +33,14 @@
                                                <div class="img_box">
                                                    <span class="ico"></span>
                                                    <span class="txt" hidden>NO IMAGE</span>
-                                                   <!--
-                                                   <p class="img">
+
+                                                   <p class="img" style="display: block;">
                                                      <img src(unknown) alt width="276" height="368">
                                                    </p>
                                                    <p class="loading">
                                                        <span>Loading...</span>
                                                    </p>
-                                                   -->
+                                                   
                                                </div>
                                            </div>
                                            <div class="main">
@@ -104,7 +104,7 @@
                                        </section>
                                    </div>
                                </div>
-                               
+                               {{ csrf_field() }}
                                <div id="processing">
                                    <ul class="clearfix">
                                        <il class="upload">

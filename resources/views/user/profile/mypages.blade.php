@@ -75,6 +75,12 @@
                                         <a href=" {{ url('/user/coordination/create') }}" class="over">コーディネートを投稿する</a>
                                     </div>
                                 </div>
+                                    
+                                    <div id="main_list">
+                                        <ul class="list clearfix">
+                                            
+                                        </ul>
+                                    </div>
                         </div>
                     </div>
                 </form>
