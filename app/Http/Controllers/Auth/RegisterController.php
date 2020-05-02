@@ -61,11 +61,17 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\User
      */
-    protected function create(array $data)
+    protected function create(array $data) 
     {
+        $birthday = $data['birth_year'] . sprintf('%02d', $data['birth_month']) . sprintf('%02d', $data['birth-day']);
+        
         return User::create([
+            
             'name' => $data['name'],
             'email' => $data['email'],
+            'gender' => $data['gender'],
+            'height' => $data['height'],
+            'birthday' => $birthday,
             'password' => Hash::make($data['password']),
         ]);
     }
