@@ -146,7 +146,7 @@ return [
     */
 
     'attributes' => [
-        'image_path' => '画像'
+        'img_upload_file' => '画像'
         ],
 
 ];

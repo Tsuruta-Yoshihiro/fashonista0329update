@@ -15,20 +15,20 @@ class CoordinationController extends Controller
     
     public function create(Request $request)
     {
-        
+        //Validation
         $this->validate($request, Coordinations::$rules);
         $coordinations = new Coordinations;
         $form = $request->all();
         
-        if (isset($form['image'])) {
-            $path = $request->file('image')->store('public/image');
+        if (isset($form['img_upload_file'])) {
+            $path = $request->file('img_upload_file')->store('public/image');
             $coordinations->image_path = basename($path);
         } else {
             $coordinations->image_path = null;
         }
         
         unset($form['_token']);
-        unset($form['image']);
+        unset($form['img_upload_file']);
         
         $coordinations->fill($form);
         $coordinations->save();
@@ -38,13 +38,13 @@ class CoordinationController extends Controller
     
     public function index(Request $request)
     {
-        $cond_image = $request->cond_image;
-        if ($cond_image != '') {
-            $posts = Coordinations::where('image', $cond_image)->get();
+        $cond_img_upload_file = $request->cond_img_upload_file;
+        if ($cond_img_upload_file != '') {
+            $posts = Coordinations::where('img_upload_file', $cond_img_upload_file)->get();
         } else {
             $posts = Coordinations::all();
         }
-        return view('user.coordination.upload', 'user.coordination.mypages', ['posts' => $posts, 'cond_image' => $cond_image]);
+        return view('user.coordination.upload', 'user.coordination.mypages', ['posts' => $posts, 'cond_img_upload_file' => $cond_img_upload_file]);
     }
     
     

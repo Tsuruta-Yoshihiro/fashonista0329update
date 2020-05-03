@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
   background-repeat: no-repeat;
   background-position: center;
@@ -65,8 +67,39 @@ body {
   width: 842px;
 }
 
+#upload_container {
+  margin: 14px 0 0 0;
+  border: 1px #A9A9A9 solid;
+  border-radius: 5px;
+  padding: 0 0 30px 0;
+  width: 840px;
+  padding-top: 30px;
+  background-color: #F5F5F5;
+}
+
+/* section */
+
+#upload_container section {
+  padding: 20px 35px;
+}
+
 #upload_container section:first-child {
   padding-top: 20px;
+}
+
+#upload_container section .section_sub {
+  width: 167px;
+  float: left;
+  text-align: right;
+}
+
+#upload_container section .section_sub.required {
+  width: 180px;
+}
+
+#upload_container section .section_sub h2 {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 #upload_container section .section_main {
@@ -74,8 +107,65 @@ body {
   float: right;
 }
 
-#upload_container section {
-  padding: 20px 35px;
+#upload_container section .section_main input {
+  font-size: 13px;
+  padding: 8px 8px 8px 8px;
+}
+
+#upload_container section .section_main textarea {
+  width: 100%;
+  max-width: 528px;
+  min-width: 528px;
+  border: 1px #A9A9A9 solid;
+  border-radius: 5px;
+  height: 150px;
+  font-size: 13px;
+  padding: 8px 8px;
+}
+
+/*　画像アップロード*/
+
+#upload_container .sub .img_box {
+  width: 276px;
+  height: 368px;
+  position: relative;
+  border: 1px #aaa;
+  background: #fff;
+  margin: 0 0 0 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #A9A9A9;
+}
+
+#upload_img .sub {
+  float: left;
+}
+
+#upload_img .sub .img_box {
+  position: relative;
+  border: 1px #aaa dashed;
+  background: #fff;
+}
+
+#upload_img .sub .img_box .loading {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -25px 0 0 -25px;
+}
+
+#upload_img .sub .img_box span {
+  display: block;
+}
+
+#upload_img .sub .img_box span.txt {
+  margin: 12px 0 0 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ccc;
 }
 
 #upload_img .sub .img_box .img {
@@ -83,6 +173,67 @@ body {
   left: -1px;
   top: -1px;
   display: none;
+}
+
+#upload_img .main {
+  padding: 154px 0 0 0;
+  width: 224px;
+  float: right;
+  position: relative;
+}
+
+#upload_img .main #ajax_mes {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-size: 13px;
+  color: #FF3B30;
+}
+
+#upload_img .main .select {
+  position: relative;
+  height: 35px;
+  width: 147px;
+  background-color: #2490d0;
+  overflow: hidden;
+  border: 2px #ddd solid;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#upload_container section .section_main input {
+  font-size: 13px;
+  padding: 8px 8px 8px 8px;
+}
+
+#upload_img .main input {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  font-size: 100px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+
+#upload_img .main .select span {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 145px;
+  height: 32px;
+  font-weight: bold;
+}
+
+#upload_img .main .notes {
+  margin: 8px 0 0 2px;
+  font-size: 12px;
+  color: #777;
 }
 
 img {
@@ -96,101 +247,8 @@ img {
   display: block;
 }
 
-#upload_img .sub .img_box {
-  width: 276px;
-  height: 368px;
-}
-
-#upload_img .sub .img_box span {
-  display: block;
-}
-
 #upload_img .sub .img_box span.ico {
   margin-top: 158px;
-}
-
-#upload_img .sub .img_box span.txt {
-  margin: 12px 0 0 0;
-  text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  color: #ccc;
-}
-
-#upload_img .sub .img_box .loading {
-  display: none;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin: -25px 0 0 -25px;
-}
-
-#upload_container {
-  margin: 14px 0 0 0;
-  border: 1px #A9A9A9 solid;
-  border-radius: 5px;
-  padding: 0 0 30px 0;
-  width: 840px;
-  padding-top: 30px;
-  background-color: #F5F5F5;
-}
-
-#upload_container section .section_sub h2 {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-#upload_container .sub .img_box {
-  width: 276px;
-  height: 368px;
-  position: relative;
-  border: 1px #aaa dashed;
-  background: #fff;
-  margin: 0 0 0 0;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #A9A9A9;
-}
-
-#upload_img .sub {
-  float: left;
-}
-
-#upload_img .main .select {
-  position: relative;
-  height: 35px;
-  width: 145px;
-  background-color: #2490d0;
-  overflow: hidden;
-  border: 2px #ddd solid;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  cursor: pointer;
-}
-
-#upload_img .main .select span {
-  position: absolute;
-  bottom: -7px;
-  left: 0;
-  width: 145px;
-  height: 32px;
-  font-weight: bold;
-}
-
-#upload_img .main {
-  padding: 154px 0 0 0;
-  width: 224px;
-  float: right;
-  position: relative;
-}
-
-#upload_img .main .notes {
-  margin: 8px 0 0 2px;
-  font-size: 12px;
-  color: #777;
 }
 
 #upload_item #add_item {
@@ -236,28 +294,6 @@ img {
 
 #coordination_detail .list .detail {
   margin: 5px 0 0 0;
-}
-
-#upload_container section .section_main textarea {
-  width: 100%;
-  max-width: 528px;
-  min-width: 528px;
-  border: 1px #A9A9A9 solid;
-  border-radius: 5px;
-  height: 150px;
-  font-size: 13px;
-  padding: 8px 8px;
-}
-
-#upload_container section .section_sub {
-  width: 167px;
-  float: left;
-  text-align: right;
-}
-
-#upload_container section .section_main {
-  width: 530px;
-  float: right;
 }
 
 #processing {

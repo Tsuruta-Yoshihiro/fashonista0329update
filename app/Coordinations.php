@@ -10,8 +10,8 @@ class Coordinations extends Model
     
     public static $rules = array(
     'user_id' => 'required',
-    'body' => 'required',
-    'image_path' => 'required',
+    'img_upload_file' => 'required',
+    'coordination_summary' => 'required',
     'item1' => 'required',
     'item2' => 'required',
     'item3' => 'required',

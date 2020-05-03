@@ -31,10 +31,14 @@
                                        <div class="section_main clearfix">
                                            <div class="sub">
                                                <div class="img_box">
+                                                   
+                                                   <!--jqueryを使用し、画像表示-->
+                                                   <div id="result"></div>
+                                                   
                                                    <span class="ico"></span>
                                                    <span class="txt" hidden>NO IMAGE</span>
 
-                                                   <p class="img" style="display: block;">
+                                                   <p class="img">
                                                      <img src(unknown) alt width="276" height="368">
                                                    </p>
                                                    <p class="loading">
@@ -45,25 +49,25 @@
                                            </div>
                                            <div class="main">
                                                <div id="ajax_mes"></div>
-                                               <div>
+                                               
+                                               <p class="select over">
                                                    <input type="file" id="file" name="img_upload_file">
-                                                    <div id="result"></div>
-                                                   <!--
                                                    <span class="txt">写真をアップロード</span>
-                                                   -->
-                                               </div>
+                                               </p>
                                                <p class="notes">
                                                    推奨サイズ：横500px × 縦：667px
                                                    <br>
                                                    容量：10MB以内
                                                </p>
                                            </div>
+                                           <!--
                                            <input type="hidden" name="coordination_imgfile" id="coordination_imgfile">
+                                           -->
                                        </div>
                                    </section>
                                    
                                    <div id="secondary">
-                                       <section id="upload_item" class="clearfix">
+                                       <section id="upload_item" class="clearfix" name="item">
                                            <div class="section_sub required">
                                                <h2>着用アイテム</h2>
                                            </div>
@@ -74,7 +78,7 @@
                                                <div id="add_item">
                                                    <div id="add_btn">
                                                        <p class="trigger over">
-                                                           <span class="ico">+</span>
+                                                           <span class="ico">＋</span>
                                                            <span class="txt">アイテムを追加</span>
                                                        </p>
                                                    </div>
@@ -96,8 +100,7 @@
                                                 <div class="list summary">
                                                     <h3>コーディネート紹介文</h3>
                                                      <div class="detail">
-                                                        <textarea name="coordination_summary" id="coordination_summary">
-                                                        </textarea>
+                                                        <textarea name="coordination_summary" id="coordination_summary"></textarea>
                                                       </div>
                                                  </div>
                                             </div>           
@@ -130,9 +133,31 @@
                     if(!file.type.match('image.*')){
                         return;
                     }
+                    
+                    //新しい幅・高さを指定
+                    var new_w = 500;
+                    var new_h = 667;
+                    
                     var fileReader = new FileReader();
                     fileReader.onloadend = function() {
                         $('#result').html('<img src="' + fileReader.result + '"/>');
+                    
+                    
+                    var width, height;
+                    if(image.width > image.height){
+                        
+                      // 横長の画像は横のサイズを指定値にあわせる
+                      var ratio = image.height/image.width;
+                      width = THUMBNAIL_WIDTH;
+                      height = THUMBNAIL_WIDTH * ratio;
+                    } else {
+                      // 縦長の画像は縦のサイズを指定値にあわせる
+                      var ratio = image.width/image.height;
+                      width = THUMBNAIL_HEIGHT * ratio;
+                      height = THUMBNAIL_HEIGHT;
+                    }
+                        
+                        
                     }
                     fileReader.readAsDataURL(file);
                 });
