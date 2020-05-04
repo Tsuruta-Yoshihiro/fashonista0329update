@@ -13,7 +13,7 @@
                 
                    <div id="gbl_body" class="clearfix">
                        <div id="content">
-                           <form action="{{ action('User\CoordinationController@upload') }}" method="post" enctype="multipart/form-data">
+                           <form action="{{ action('User\CoordinationController@create') }}" method="post" enctype="multipart/form-data">
                                
                                @if (count($errors) > 0)
                                    <ul>

@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 
-Route::group(['prefix' => 'user', 'middleware' => 'auth'], function(){
+Route::group(['prefix' => 'user', 'middleware' => 'auth'], function() {
     
     Route::get('coordination/create', 'User\CoordinationController@add');
     Route::post('coordination/create', 'User\CoordinationController@create');
