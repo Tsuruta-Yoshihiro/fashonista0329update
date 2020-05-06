@@ -248,6 +248,7 @@ img {
   border: 0 none;
   max-width: 100%;
   height: auto;
+  
   vertical-align: bottom;
 }
 
@@ -311,23 +312,24 @@ img {
   width: 240px;
 }
 
-.upload {
+#processing .upload {
   margin: 0 11px 0 11px;
   float: left;
-  width: 220px;
+  width: 218px;
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: bold;
   position: relative;
 }
 
-.upload a {
+
+.upload input {
   display: block;
   text-align: center;
+  width: 218px;
   background-color: #2490d0;
   padding: 12px 0 12px 0;
   color: #fff;
-  
   font-weight: bold;
   border: 1px #1e78ad solid;
   border-radius: 4px;

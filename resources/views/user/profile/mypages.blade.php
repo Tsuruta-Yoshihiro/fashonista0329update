@@ -77,9 +77,9 @@
                                 </div>
                                     
                                     <div id="main_list">
-                                        <ul class="list clearfix">
+                                        <form action="{{ action('User\CoordinationController@index') }}" method="get">
                                             
-                                        </ul>
+                                        </form>
                                     </div>
                         </div>
                     </div>

@@ -21,8 +21,8 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth'], function() {
     Route::get('coordination/create', 'User\CoordinationController@add');
     Route::post('coordination/create', 'User\CoordinationController@create');
     
-    Route::get('coordination/upload' , 'User\CoordinationController@upload');
-    
+    // ↓↓投稿一覧をmypagesへ表示させるため不要↓↓
+    //Route::get('coordination/upload' , 'User\CoordinationController@upload');
     
     Route::get('coordination', 'User\CoordinationController@index');
     

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Coordinations;
+use App\Post;
 
 class CoordinationController extends Controller
 {
@@ -16,27 +16,30 @@ class CoordinationController extends Controller
     public function create(Request $request)
     {
         //Validation
-        $this->validate($request, Coordinations::$rules);
-        $coordinations = new Coordinations;
+        $this->validate($request, Post::$rules);
+        $post = new Post;
         $form = $request->all();
         
-        if (isset($form['img_upload_file'])) {
-            $path = $request->file('img_upload_file')->store('public/image');
-            $coordinations->image_path = basename($path);
-        } else {
-            $coordinations->image_path = null;
+        if (isset($form['image'])) {
+        $path = $request->file('image')->store('public/image');
+        $post->image_path = basename($path);
         }
         
         unset($form['_token']);
-        unset($form['img_upload_file']);
+        unset($form['image']);
         
-        $coordinations->fill($form);
-        $coordinations->save();
+        $post->fill($form);
+        $post->user_id = $request->user()->id;
+        $post->save();
         
-        return redirect('user/coordination/create');
+        return redirect('user/profile/mypages');
     }
     
-    
+    public function index(Request $request)
+    {
+        $posts = Post::all();
+        return view('user.profile.mypages', ['posts' => $posts,]);
+    }
     
     
     public function upload()
@@ -54,5 +57,6 @@ class CoordinationController extends Controller
     {
         return redirect('user.coordination.edit');
     }
+    
 
 }

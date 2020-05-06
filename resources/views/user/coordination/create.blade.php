@@ -15,6 +15,7 @@
                        <div id="content">
                            <form action="{{ action('User\CoordinationController@create') }}" method="post" enctype="multipart/form-data">
                                
+                               
                                @if (count($errors) > 0)
                                    <ul>
                                       @foreach($errors->all() as $e)
@@ -23,6 +24,8 @@
                                    </ul>
                                @endif
                                
+                               
+                               <!-- 画像アップデート -->
                                <div id="upload_container">
                                    <section id="upload_img" class="clearfix" for="image">
                                        <div class="section_sub required">
@@ -51,7 +54,7 @@
                                                <div id="ajax_mes"></div>
                                                
                                                <p class="select over">
-                                                   <input type="file" id="file" name="img_upload_file">
+                                                   <input type="file" class="form-control-file" id="file" name="image">
                                                    <span class="txt">写真をアップロード</span>
                                                </p>
                                                <p class="notes">
@@ -66,6 +69,7 @@
                                        </div>
                                    </section>
                                    
+                                　　<!-- アイテム追加 -->
                                    <div id="secondary">
                                        <section id="upload_item" class="clearfix" name="item">
                                            <div class="section_sub required">
@@ -92,6 +96,8 @@
                                            </div>
                                        </section>
                                        
+                                       
+                                    　<!-- コーディネート紹介 -->
                                        <section id="coordination_detail" class="clearfix">
                                            <div class="section_sub">
                                                <h2>コーディネート詳細</h2>
@@ -111,7 +117,7 @@
                                <div id="processing">
                                    <ul class="clearfix">
                                        <il class="upload">
-                                         <a href=" {{ url('/user/coordination/upload') }}" class="over">投稿する</a>
+                                         <input type="submit" class="btn btn-primary" value="投稿する">
                                        </il>
                                    </ul>
                                </div>
@@ -131,12 +137,10 @@
                     $('img').remove();
                     var file = $(this).prop('files')[0];
                     if(!file.type.match('image.*')){
+                        file = null;
+                        bold = null;
                         return;
                     }
-                    
-                    //新しい幅・高さを指定
-                    var new_w = 500;
-                    var new_h = 667;
                     
                     var fileReader = new FileReader();
                     fileReader.onloadend = function() {

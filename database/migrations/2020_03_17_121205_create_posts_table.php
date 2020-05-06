@@ -16,14 +16,14 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('post_id');
             $table->string('user_id');
-            $table->string('img_upload_file');
-            $table->string('coordination_summary')->nullable;
-            $table->string('item1');
-            $table->string('item2')->nullable;
-            $table->string('item3')->nullable;
-            $table->string('item4')->nullable;
-            $table->string('item5')->nullable;
-            $table->string('item6')->nullable;
+            $table->string('image_path');
+            $table->string('coordination_summary')->nullable();
+            $table->string('item1')->nullable();
+            $table->string('item2')->nullable();
+            $table->string('item3')->nullable();
+            $table->string('item4')->nullable();
+            $table->string('item5')->nullable();
+            $table->string('item6')->nullable();
             $table->timestamps();
         });
     }
