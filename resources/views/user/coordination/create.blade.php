@@ -33,10 +33,9 @@
                                        </div>
                                        <div class="section_main clearfix">
                                            <div class="sub">
-                                               <div class="img_box">
-                                                   
-                                                   <!--jqueryを使用し、画像表示-->
-                                                   <div id="result"></div>
+                                               
+                                                 <!--jquery読み込み<img_box>、画像表示-->
+                                               <div id="img_box" class="img_box">
                                                    
                                                    <span class="ico"></span>
                                                    <span class="txt" hidden>NO IMAGE</span>
@@ -51,7 +50,9 @@
                                                </div>
                                            </div>
                                            <div class="main">
+                                               <!--
                                                <div id="ajax_mes"></div>
+                                               -->
                                                
                                                <p class="select over">
                                                    <input type="file" class="form-control-file" id="file" name="image">
@@ -128,44 +129,5 @@
             </div>
         </div>
     </div>
-    
-    
-         <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-            <script>
-            $(function(){
-                $('#file').change(function(){
-                    $('img').remove();
-                    var file = $(this).prop('files')[0];
-                    if(!file.type.match('image.*')){
-                        file = null;
-                        bold = null;
-                        return;
-                    }
-                    
-                    var fileReader = new FileReader();
-                    fileReader.onloadend = function() {
-                        $('#result').html('<img src="' + fileReader.result + '"/>');
-                    
-                    
-                    var width, height;
-                    if(image.width > image.height){
-                        
-                      // 横長の画像は横のサイズを指定値にあわせる
-                      var ratio = image.height/image.width;
-                      width = THUMBNAIL_WIDTH;
-                      height = THUMBNAIL_WIDTH * ratio;
-                    } else {
-                      // 縦長の画像は縦のサイズを指定値にあわせる
-                      var ratio = image.width/image.height;
-                      width = THUMBNAIL_HEIGHT * ratio;
-                      height = THUMBNAIL_HEIGHT;
-                    }
-                        
-                        
-                    }
-                    fileReader.readAsDataURL(file);
-                });
-            });
-            </script>
             
 @endsection

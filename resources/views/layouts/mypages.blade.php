@@ -13,6 +13,7 @@
         
         <!--Scripts-->
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
+        <script scr="{{ secure_asset('js/mypages.js') }}" defer></script>
         
         <!--Fonts-->
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">

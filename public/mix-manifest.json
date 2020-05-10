@@ -7,5 +7,6 @@
     "/css/toppages.css": "/css/toppages.css",
     "/css/upload.css": "/css/upload.css",
     "/css/othermypages.css": "/css/othermypages.css",
-    "/css/profile_edit.css": "/css/profile_edit.css"
+    "/css/profile_edit.css": "/css/profile_edit.css",
+    "/js/post.js": "/js/post.js"
 }

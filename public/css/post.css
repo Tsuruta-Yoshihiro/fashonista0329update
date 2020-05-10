@@ -238,9 +238,10 @@ body {
 
 img {
   border: 0 none;
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
+  width: 276px;
+  height: 368px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .style {
