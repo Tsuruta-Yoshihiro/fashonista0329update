@@ -38,7 +38,7 @@ class CoordinationController extends Controller
     public function index(Request $request)
     {
         $posts = Post::all();
-        return view('user.profile.mypages', ['posts' => $posts,]);
+        return view('user.profile.mypages', ['posts' => $posts]);
     }
     
     

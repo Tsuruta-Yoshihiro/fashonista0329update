@@ -77,9 +77,23 @@
                                 </div>
                                     
                                     <div id="main_list">
-                                        <form action="{{ action('User\CoordinationController@index') }}" method="get">
+                                        <div id ="container_list">
+                                            <form action="{{ action('User\CoordinationController@index') }}" method="get">
+                                                
+                                            <div id ="controls" class="controls"></div> 
+                                            <div class="slideshow-container">
+                                                <div id="loading" class="loader"></div>
+                                                <div id="slideshow" class="slideshow"></div>
+                                            </div>
+                                            <div id="caption" class="caption-container"></div>
+                                            </form>
                                             
-                                        </form>
+                                            <!-- サムネイルナビゲーション -->
+                                            <div id="thumbs" class="navigation">
+                                                <ul class="thumbs noscript"></ul>
+                                            </div>
+                                            <div style="clear:both;"></div>
+                                        </div>
                                     </div>
                         </div>
                     </div>

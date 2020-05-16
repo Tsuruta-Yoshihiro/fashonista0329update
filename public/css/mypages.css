@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 body {
   background-repeat: no-repeat;
   background-position: center;
@@ -203,5 +205,191 @@ body {
   line-height: 1.2;
   padding: 13px 0 13px 0;
   background-color: #2490d0;
+}
+
+/*　投稿リストの表示 */
+
+#main_list {
+  width: 900px;
+  background-color: #fff;
+  margin: 0 auto;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#container {
+  padding: 20px;
+}
+
+.content {
+  display: none;
+  float: right;
+  width: 550px;
+}
+
+.content a,
+div.navigation a {
+  text-decoration: none;
+  color: #777;
+}
+
+.content a:focus,
+div.content a:hover,
+div.content a:active {
+  text-decoration: underline;
+}
+
+.controls {
+  margin-top: 5px;
+  height: 23px;
+}
+
+.controls a {
+  padding: 5px;
+}
+
+.ss-controls {
+  float: left;
+}
+
+.nav-controls {
+  float: right;
+}
+
+.slideshow-container {
+  position: relative;
+  clear: both;
+  height: 502px;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 550px;
+  height: 502px;
+}
+
+.slideshow span.image-wrapper {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.slideshow a.advance-link {
+  display: block;
+  width: 550px;
+  height: 502px;
+  line-height: 502px;
+  text-align: center;
+}
+
+.slideshow img {
+  vertical-align: middle;
+  border: 1px solid #ccc;
+}
+
+.download {
+  float: right;
+}
+
+.caption-container {
+  position: relative;
+  clear: left;
+  height: 75px;
+}
+
+.image-caption {
+  display: block;
+  position: absolute;
+  width: 550px;
+  top: 0;
+  left: 0;
+}
+
+.caption {
+  padding: 12px;
+}
+
+.image-desc {
+  line-height: 1.3em;
+  padding-top: 12px;
+}
+
+.thumbs {
+  clear: both;
+  margin: 0;
+  padding: 0;
+}
+
+.thumbs li {
+  float: left;
+  padding: 0;
+  margin: 5px 10px 5px 0;
+  list-style: none;
+}
+
+.thumb {
+  padding: 2px;
+  width: 75px;
+  height: 75px;
+  display: block;
+  border: 1px solid #ccc;
+}
+
+.thumbs li.selected a.thumb {
+  background: #000;
+}
+
+.thumb:focus {
+  outline: none;
+}
+
+.thumbs img {
+  border: none;
+  display: block;
+}
+
+.pagination {
+  clear: both;
+}
+
+.navigation div.top {
+  margin-bottom: 12px;
+  height: 11px;
+}
+
+.navigation div.bottom {
+  margin-top: 12px;
+}
+
+.pagination a,
+div.pagination span.current,
+div.pagination span.ellipsis {
+  display: block;
+  float: left;
+  margin-right: 2px;
+  padding: 4px 7px 2px 7px;
+  border: 1px solid #ccc;
+}
+
+.pagination a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.pagination span.current {
+  font-weight: bold;
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.pagination span.ellipsis {
+  border: none;
+  padding: 5px 0 3px 2px;
 }
 
