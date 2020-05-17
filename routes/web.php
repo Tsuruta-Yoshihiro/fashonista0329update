@@ -38,6 +38,7 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth'], function() {
     Route::post('profile/create', 'User\ProfileController@create');
     
     
+    
     Route::get('profile/edit', 'User\ProfileController@edit');
     Route::post('profile/edit', 'User\ProfileController@update');
     

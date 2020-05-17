@@ -76,25 +76,29 @@
                                     </div>
                                 </div>
                                     
-                                    <div id="main_list">
-                                        <div id ="container_list">
-                                            <form action="{{ action('User\CoordinationController@index') }}" method="get">
+                                    @foreach($posts as $post)
+                                        <div id="main_list">
+                                            <div id ="container_list">
+                                                 <form action="{{ action('User\CoordinationController@index') }}" method="get">
+                                                　
+                                                    <div id ="controls" class="controls"></div> 
+                                                        <div class="slideshow-container">
+                                                            <div id="loading" class="loader"></div>
+                                                            
+                                                            <div id="slideshow" class="slideshow"></div>
+                                                        </div>
+                                                    <div id="caption" class="caption-container"></div>
+                                                </form>
                                                 
-                                            <div id ="controls" class="controls"></div> 
-                                            <div class="slideshow-container">
-                                                <div id="loading" class="loader"></div>
-                                                <div id="slideshow" class="slideshow"></div>
+                                                <!-- サムネイルナビゲーション -->
+                                                <div id="thumbs" class="navigation">
+                                                    <ul class="thumbs noscript"></ul>
+                                                </div>
+                                                <div style="clear:both;"></div>
                                             </div>
-                                            <div id="caption" class="caption-container"></div>
-                                            </form>
-                                            
-                                            <!-- サムネイルナビゲーション -->
-                                            <div id="thumbs" class="navigation">
-                                                <ul class="thumbs noscript"></ul>
-                                            </div>
-                                            <div style="clear:both;"></div>
                                         </div>
-                                    </div>
+                                    @endforeach
+                                    
                         </div>
                     </div>
                 </form>
